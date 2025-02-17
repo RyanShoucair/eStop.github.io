@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="background-background">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="eStop - Your premier destination for the latest display innovations" />
+    <meta
+      name="keywords"
+      content="monitors, computer accessories, gaming monitors, office displays" />
+    <meta name="author" content="eStop" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/x-icon" href="../assets/cart.webp" />
+    <title>eStop - Premium Monitors & Computer Accessories</title>
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      as="font"
+      onload="this.onload=null;this.rel='stylesheet'" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+      media="print"
+      onload="this.media='all'" />
+      <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap">
+      </noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      media="print"
+      onload="this.media='all'" />
+    <script src="../js/contact.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              logo: "#156F85",
+              link: "#C1372F",
+              outline: "#2C3B47",
+              text: "#1F2224",
+              background: "#F5F5F6",
+              "background-dark": "#D8D9DA",
+            },
+            fontFamily: {
+              sans: ["Open Sans", "sans-serif"],
+              serif: ["Inter", "serif"],
+            },
+            screens: {
+              xs: "375px",
+              sm: "392px",
+              md: "1024px",
+              lg: "1728px",
+            },
+            borderRadius: {
+              xl: "10px",
+            },
+            fontSize: {
+              xs: "18px",
+              sm: "22px",
+              lg: "28px",
+              xl: "32px",
+              "2xl": "38px",
+              "3xl": "42px",
+              "4xl": "48px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-background shadow-sm" role="header">
+      <div class="px-3 lg:px-6 py-2 lg:py-4">
+        <div class="block lg:flex items-center justify-between">
+          <h1 class="text-logo font-serif text-4xl hover:opacity-90 transition-opacity duration-200">
+            <a href="../index.html">eStop</a>
+          </h1>
+          <div class="flex flex-col lg:flex-row lg:items-center lg:flex-grow">
+            <!-- Search Bar -->
+            <div class="relative mt-2 lg:mt-0 lg:ml-8 lg:flex-grow lg:max-w-xl">
+              <input type="text" placeholder="Search products..." aria-label="Search products"
+                class="w-full px-4 py-2 rounded-lg border-2 border-outline focus:outline-none focus:border-link">
+              <button class="absolute right-3 top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity" aria-label="Search">
+                <img src="../assets/search.webp" alt="Search icon" class="w-5 h-5">
+              </button>
+            </div>
+            <!-- Navigation -->
+            <nav class="flex justify-between items-center text-link text-sm font-medium mt-3 lg:justify-end lg:flex-grow lg:space-x-36 lg:mt-0">
+              <a href="../index.html" class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300"> HOME </a>
+              <a href="products.html" class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300"> PRODUCTS </a>
+              <a href="contact.html" class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300"> CONTACT </a>
+              <a href="#" class="relative" aria-label="Shopping Cart">
+                <img src="../assets/cart.webp" alt="Cart icon" class="w-6 h-6">
+                <span class="absolute -top-2 -right-2 bg-link text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+              </a>
+            </nav>
+    </header>
+    <!-- Contact Section -->
+      <div class="px-4 py-8">
+        <h1 class="text-xl lg:text-xl text-text text-center font-bold mb-8">
+          Get in Touch
+        </h1>
+        <!-- Business Hours and Returns Address Cards -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-8">
+          <!-- Business Hours Card -->
+          <section
+            aria-labelledby="business-hours"
+            class="bg-background p-6 rounded-xl shadow-sm">
+            <h2 id="business-hours" class="text-lg font-semibold mb-4 text-text">
+              Business Hours
+            </h2>
+            <dl class="space-y-2 text-text">
+              <div class="flex justify-between">
+                <dt>Monday - Friday</dt>
+                <dd>9:00 AM - 5:00 PM</dd>
+              </div>
+              <div class="flex justify-between text-text/70">
+                <dt>Saturday - Sunday</dt>
+                <dd>Closed</dd>
+              </div>
+            </dl>
+          </section>
+          <!-- Returns Address Card -->
+          <section
+            aria-labelledby="returns-address"
+            class="bg-background p-6 rounded-xl shadow-sm">
+            <h2 id="returns-address" class="text-lg font-semibold mb-4 text-text">
+              Returns Address
+            </h2>
+            <address>
+              308 Negra Arroyo Lane<br />
+              Albuquerque, New Mexico<br />
+              87104
+            </address>
+          </section>
+        </div>
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+          <!-- FAQ Section -->
+          <section aria-labelledby="faq-title" class="bg-background rounded-xl p-8 h-full">
+            <h2 id="faq-title" class="text-xl font-bold text-text mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+              <div class="p-4 border-2 border-outline rounded-lg hover:border-logo transition-colors">
+                <h3 class="font-semibold mb-2">My product arrived damaged. Can I get a refund?</h3>
+                <p class="text-text">
+                  <span class="text-logo">eStop</span> does not assume responsibility for items damaged in post. 
+                  Please contact your shipping courier for resolution.
+                </p>
+              </div>
+              <div class="p-4 border-2 border-outline rounded-lg hover:border-logo transition-colors">
+                <h3 class="font-semibold mb-2">How do I initiate an RMA?</h3>
+                <p class="text-text">
+                  Please send an email containing your order # and issue to <br>
+                  e-stop@gmail.com.
+                </p>
+              </div>
+              <div class="p-4 border-2 border-outline rounded-lg hover:border-logo transition-colors">
+              <p class="font-semibold mb-2">My question is not here. What now? </p>
+              <p class="text-text">
+                A: No worries! Please fill out the contact form to speak with an
+                authorized <span class="text-logo">eStop</span> agent.
+              </p>
+            </div>
+          </section>
+          <!-- Contact Form -->
+          <section
+            aria-labelledby="contact-form"
+            class="mt-8 lg:mt-0 h-full">
+            <form
+              id="contactForm"
+              class="bg-background p-6 rounded-xl shadow-sm space-y-4 h-full flex flex-col"
+              novalidate>
+              <!-- Form Fields -->
+              <div class="grid grid-cols-2 gap-6 ">
+                <!-- Name Fields -->
+                <div class="flex flex-col gap-2">
+                  <label class="block text-sm font-medium text-text"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-2 rounded-lg border-2 border-outline focus:outline-none focus:border-logo" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="block text-sm font-medium text-text"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-2 rounded-lg border-2 border-outline focus:outline-none focus:border-logo" />
+                </div>
+              </div>
+              <!-- Email Field -->
+              <div class="flex flex-col gap-2">
+                <label class="block text-sm font-medium text-text">Email</label>
+                <input
+                  type="email"
+                  class="w-full px-4 py-2 rounded-lg border-2 border-outline focus:outline-none focus:border-logo" />
+              </div>
+              <!-- Subject Field -->
+              <div class="flex flex-col gap-2">
+                <label class="block text-sm font-medium text-text"
+                  >Subject</label
+                >
+                <select
+                  class="w-full px-4 py-2 rounded-lg border-2 border-outline focus:outline-none focus:border-logo">
+                  <option value="">Select a topic</option>
+                  <option value="support">Product Support</option>
+                  <option value="returns">Returns & Refunds</option>
+                  <option value="feedback">Product Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <!-- Message Field -->
+              <div class="flex flex-col gap-2 flex-grow">
+                <label class="block text-sm font-medium text-text"
+                  >Message</label
+                >
+                <textarea
+                  rows="6"
+                  class="w-full h-full px-4 py-2 rounded-lg border-2 border-outline focus:border-logo focus:outline-none resize-none"
+                  placeholder="How can we help you?"></textarea>
+              </div>
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="w-full bg-background-dark text-link font-medium py-3 rounded-lg hover:text-white transition-colors duration-300">
+                Send Message
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-background px-3 py-4 shadow-[0_-1px_2px_0_rgba(0,0,0,0.05)]" role="contentinfo">
+      <div class="flex justify-between items-center">
+        <a href="contact.html" class="flex items-center">
+          <img src="../assets/email.webp" alt="Email Icon" class="w-5 h-5 mr-2" />
+          <span class="text-text group-hover:underline text-sm">Feedback</span>
+        </a>
+        <p class="text-logo font-bold text-sm">eStop</p>
+        <div class="flex items-center">
+          <img src="../assets/copyright.webp" alt="Copyright Icon" class="w-5 h-5 mr-2" />
+          <p class="text-text text-sm">Copyright</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

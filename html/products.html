@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="eStop - Your premier destination for the latest display innovations">
+    <meta
+    name="keywords"
+    content="monitors, computer accessories, gaming monitors, office displays" />
+    <meta name="author" content="eStop" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/x-icon" href="../assets/cart.webp" />
+    <title>eStop - Premium Monitors & Computer Accessories</title>
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      as="font"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+      media="print"
+      onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap">
+    </noscript>
+   <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+        media="print"
+    onload="this.media='all'" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              logo: "#156F85",
+              link: "#C1372F",
+              outline: "#2C3B47",
+              text: "#1F2224",
+              background: "#F5F5F6",
+              "background-dark": "#D8D9DA",
+            },
+            fontFamily: {
+              sans: ["Open Sans", "sans-serif"],
+              serif: ["Inter", "serif"],
+            },
+            screens: {
+              xs: "375px",
+              sm: "392px",
+              md: "1024px",
+              lg: "1728px",
+            },
+            borderRadius: {
+              xl: "10px",
+            },
+            fontSize: {
+              xs: "18px",
+              sm: "22px",
+              lg: "28px",
+              xl: "32px",
+              "2xl": "38px",
+              "3xl": "42px",
+              "4xl": "48px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-background shadow-sm" role="banner">
+      <div class="px-3 lg:px-6 py-2 lg:py-4">
+        <div class="block lg:flex items-center justify-between">
+          <h1 class="font-serif text-logo text-4xl hover:opacity-90 transition-opacity duration-200">
+            <a href="../index.html">eStop</a>
+          </h1>
+          <div class="flex flex-col lg:flex-row lg:items-center lg:flex-grow">
+            <!-- Search Bar -->
+            <div class="relative mt-2 lg:mt-0 lg:ml-8 lg:flex-grow lg:max-w-xl">
+              <input type="text" placeholder="Search products..." aria-label="Search products"
+                class="w-full px-3 xs:px-4 py-3 xs:py-4 rounded-lg border-2 border-outline focus:outline-none focus:border-link min-h-[44px]">
+              <button class="absolute right-3 top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity p-3 min-w-[44px] min-h-[44px]" aria-label="Search">
+                <img src="../assets/search.webp" alt="Search icon" width="241" height="200" class="w-5 h-5 object-contain">
+              </button>
+            </div>
+            <!-- Navigation -->
+            <nav class="flex justify-between items-center text-link text-sm font-medium mt-3 lg:justify-end lg:flex-grow lg:space-x-36 lg:mt-0">
+              <a href="../index.html" class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300"> HOME </a>
+              <a href="products.html" class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300"> PRODUCTS </a>
+              <a href="contact.html" class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300"> CONTACT </a>
+              <a href="#" class="relative" aria-label="Shopping Cart">
+                <img src="../assets/cart.webp" alt="Cart icon" width="24" height="24" class="w-6 h-6">
+                <span class="absolute -top-2 -right-2 bg-link text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+              </a>
+            </nav>
+    </header>
+    <!-- Filter Section -->
+    <div class="bg-background py-4">
+      <div class="flex flex-col lg:flex-row justify-between mx-3 lg:mx-6 gap-4">
+        <div class="flex flex-wrap gap-4">
+          <select
+            class="border-2 border-outline rounded-lg p-2 text-sm lg:text-lg text-text transition-all duration-300 focus:border-link">
+            <option value="">Category</option>
+            <option value="monitors">Monitors</option>
+            <option value="peripherals">Peripherals</option>
+            <option value="accessories">Accessories</option>
+            <option value="gaming">Gaming</option>
+          </select>
+          <select
+            class="border-2 border-outline rounded-lg p-2 text-sm lg:text-lg text-text transition-all duration-300 focus:border-link">
+            <option value="">Price Range</option>
+            <option value="0-100">$0 - $100</option>
+            <option value="101-500">$101 - $500</option>
+            <option value="501+">$501+</option>
+          </select>
+          <select
+            class="border-2 border-outline rounded-lg p-2 text-sm lg:text-lg text-text transition-all duration-300 focus:border-link">
+            <option value="">Sort By</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- Product Section -->
+    <main class="p-8">
+      <h1 class="text-xl lg:text-2xl text-text text-center font-bold mb-6">Products</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product Card -->
+        <div onclick="showInfo('product-1-info')"
+          class="bg-background border-2 border-outline rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="relative">
+            <img
+              src="../assets/item-1.webp"
+              alt="Pro Gaming Mouse"
+              width="400"
+              height="300"
+              class="w-full h-48 object-contain mb-4" 
+              loading="lazy"/>
+            <span
+              class="absolute -top-2 -right-2 bg-link text-white text-xs px-3 py-1 rounded-full"
+              >SALE</span
+            >
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-lg font-semibold text-text">Pro Gaming Mouse</h3>
+            <p class="text-outline text-sm"
+              >High-precision optical sensor, customizable RGB lighting,
+              ergonomic design</p
+            >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-text font-bold text-xl">$59.99</p>
+                <p class="text-outline text-sm line-through">$79.99</p>
+              </div>
+              <button 
+                class="bg-background-dark text-link px-4 py-2 rounded-lg hover:bg-link hover:text-white transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-link active:scale-95">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Additional Info (onClick)-->
+        <table id="product-1-info" class="info text-lg text-text hidden flex-col place-items-center pt-8">
+          <tr>
+            <th class="p-3"> Size </th>
+            <th class="p-3"> Color </th>
+            <th class="p-3"> Contrast </th>
+          </tr>
+          <tr>
+          <td class="text-center"> 27" </td>
+          <td class="text-center"> Blue </td>
+          <td class="text-center"> High </td>
+         </tr>
+        </table>
+        </div>
+        <!-- Product Card #2 -->
+        <div onclick="showInfo('product-2-info')"
+          class="bg-background border-2 border-outline rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="relative">
+            <img
+              src="../assets/item-2.webp"
+              alt="Mechanical Keyboard"
+              width="400"
+              height="300"
+              class="w-full h-48 object-contain mb-4" 
+              loading="lazy"/>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-lg font-semibold text-text">Mechanical Keyboard</h3>
+            <p class="text-outline text-sm"
+              >Tactile switches, customizable RGB lighting, durable build</p
+            >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-text font-bold text-xl">$129.99</p>
+              </div>
+              <button
+                class="bg-background-dark text-link px-4 py-2 rounded-lg hover:bg-link hover:text-white transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-link active:scale-95">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Additional Info (onClick)-->
+        <table id="product-2-info" class="info text-lg text-text flex-col place-items-center pt-12 hidden">
+          <tr>
+            <th class="p-3"> Size </th>
+            <th class="p-3"> Color </th>
+            <th class="p-3"> Contrast </th>
+          </tr>
+          <tr>
+          <td class="text-center"> 27" </td>
+          <td class="text-center"> Blue </td>
+          <td class="text-center"> High </td>
+        </tr>
+        </table>
+        </div>
+        <!-- Product Card #3 -->
+        <div onclick="showInfo('product-3-info')"
+          class="bg-background border-2 border-outline rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="relative">
+            <img
+              src="../assets/item-3.webp"
+              alt="Gaming Headset"
+              width="400"
+              height="300"
+              class="w-full h-48 object-contain mb-4"
+              loading="lazy" />
+            <span
+              class="absolute -top-2 -right-2 bg-link text-white text-xs px-3 py-1 rounded-full"
+              >SALE</span
+            >
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-lg font-semibold text-text">Gaming Headset</h3>
+            <p class="text-outline text-sm"
+              >Surround sound, noise-cancelling microphone, comfortable fit</p
+            >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-text font-bold text-xl">$89.99</p>
+                <p class="text-outline text-sm line-through">$119.99</p>
+              </div>
+              <button
+                class="bg-background-dark text-link px-4 py-2 rounded-lg hover:bg-link hover:text-white transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-link active:scale-95">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Additional Info (onClick)-->
+        <table id="product-3-info" class="info text-lg text-text flex-col place-items-center pt-8 hidden">
+          <tr>
+            <th class="p-3"> Size </th>
+            <th class="p-3"> Color </th>
+            <th class="p-3"> Contrast </th>
+          </tr>
+          <tr>
+          <td class="text-center"> 27" </td>
+          <td class="text-center"> Blue </td>
+          <td class="text-center"> High </td>
+        </tr>
+        </table>
+        </div>
+        <!-- Product Card #4 -->
+        <div onclick="showInfo('product-4-info')"
+          class="bg-background border-2 border-outline rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="relative">
+            <img
+              src="../assets/item-4.webp"
+              alt="4K Monitor"
+              width="400"
+              height="300"
+              class="w-full h-48 object-contain mb-4"
+              loading="lazy" />
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-lg font-semibold text-text">4K Monitor</h3>
+            <p class="text-outline text-sm"
+              >Ultra HD resolution, high refresh rate, HDR support</p
+            >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-text font-bold text-xl">$399.99</p>
+              </div>
+              <button
+                class="bg-background-dark text-link px-4 py-2 rounded-lg hover:bg-link hover:text-white transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-link active:scale-95">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Additional Info (onClick)-->
+        <table id="product-4-info" class="info text-lg text-text flex-col place-items-center pt-12 hidden">
+          <tr>
+            <th class="p-3"> Size </th>
+            <th class="p-3"> Color </th>
+            <th class="p-3"> Contrast </th>
+          </tr>
+          <tr>
+          <td class="text-center"> 27" </td>
+          <td class="text-center"> Blue </td>
+          <td class="text-center"> High </td>
+        </tr>
+        </table>
+        </div>
+        <!-- Product Card #5 -->
+        <div onclick="showInfo('product-5-info')"
+          class="bg-background border-2 border-outline rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="relative">
+            <img
+              src="../assets/item-5.webp"
+              alt="Gaming Chair"
+              width="400"
+              height="300"
+              class="w-full h-48 object-contain mb-4" 
+              loading="lazy"/>
+            <span
+              class="absolute -top-2 -right-2 bg-link text-white text-xs px-3 py-1 rounded-full"
+              >SALE</span
+            >
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-lg font-semibold text-text">Gaming Chair</h3>
+            <p class="text-outline text-sm"
+              >Ergonomic design, adjustable armrests, lumbar support</p
+            >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-text font-bold text-xl">$199.99</p>
+                <p class="text-outline text-sm line-through">$249.99</p>
+              </div>
+              <button
+                class="bg-background-dark text-link px-4 py-2 rounded-lg hover:bg-link hover:text-white transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-link active:scale-95">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Additional Info (onClick)-->
+        <table id="product-5-info" class="info text-lg text-text flex-col place-items-center pt-8 hidden">
+          <tr>
+            <th class="p-3"> Size </th>
+            <th class="p-3"> Color </th>
+            <th class="p-3"> Contrast </th>
+          </tr>
+          <tr>
+          <td class="text-center"> 27" </td>
+          <td class="text-center"> Blue </td>
+          <td class="text-center"> High </td>
+        </tr>
+        </table>
+        </div>
+        <!-- Product Card #6 -->
+        <div onclick="showInfo('product-6-info')"
+          class="bg-background border-2 border-outline rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="relative">
+            <img
+              src="../assets/item-6.webp"
+              alt="VR Headset"
+              width="400"
+              height="300"
+              class="w-full h-48 object-contain mb-4" 
+              loading="lazy"/>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-lg font-semibold text-text">VR Headset</h3>
+            <p class="text-outline text-sm"
+              >Immersive experience, high resolution, comfortable fit</p
+            >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-text font-bold text-xl">$299.99</p>
+              </div>
+              <button
+                class="bg-background-dark text-link px-4 py-2 rounded-lg hover:bg-link hover:text-white transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-link active:scale-95">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Additional Info (onClick)-->
+        <table id="product-6-info" class="info text-lg text-text flex-col place-items-center pt-12 hidden">
+          <tr>
+            <th class="p-3"> Size </th>
+            <th class="p-3"> Color </th>
+            <th class="p-3"> Contrast </th>
+          </tr>
+          <tr>
+          <td class="text-center"> 27" </td>
+          <td class="text-center"> Blue </td>
+          <td class="text-center"> High </td>
+        </tr>
+        </table>
+        </div>
+        <!-- Product Card #7 -->
+        <div onclick="showInfo('product-7-info')"
+          class="bg-background border-2 border-outline rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="relative">
+            <img
+              src="../assets/item-7.webp"
+              alt="External SSD"
+              width="400"
+              height="300"
+              class="w-full h-48 object-contain mb-4" 
+              loading="lazy"/>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-lg font-semibold text-text">External SSD</h3>
+            <p class="text-outline text-sm"
+              >Fast data transfer, compact design, durable build</p
+            >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-text font-bold text-xl">$149.99</p>
+              </div>
+              <button
+                class="bg-background-dark text-link px-4 py-2 rounded-lg hover:bg-link hover:text-white transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-link active:scale-95">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Additional Info (onClick)-->
+        <table id="product-7-info" class="info text-lg text-text flex-col place-items-center pt-12 hidden">
+          <tr>
+            <th class="p-3"> Size </th>
+            <th class="p-3"> Color </th>
+            <th class="p-3"> Contrast </th>
+          </tr>
+          <tr>
+          <td class="text-center"> 27" </td>
+          <td class="text-center"> Blue </td>
+          <td class="text-center"> High </td>
+        </tr>
+        </table>
+        </div>
+        <!-- Product Card #8 -->
+        <div onclick="showInfo('product-8-info')"
+          class="bg-background border-2 border-outline rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="relative">
+            <img
+              src="../assets/item-8.webp"
+              alt="Wireless Earbuds"
+              width="400"
+              height="300"
+              class="w-full h-48 object-contain mb-4" 
+              loading="lazy"/>
+            <span
+              class="absolute -top-2 -right-2 bg-link text-white text-xs px-3 py-1 rounded-full"
+              >SALE</span
+            >
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-lg font-semibold text-text">Wireless Earbuds</h3>
+            <p class="text-outline text-sm"
+              >High-quality sound, long battery life, comfortable fit</p
+            >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-text font-bold text-xl">$79.99</p>
+                <p class="text-outline text-sm line-through">$99.99</p>
+              </div>
+              <button
+                class="bg-background-dark text-link px-4 py-2 rounded-lg hover:bg-link hover:text-white transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-link active:scale-95">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Additional Info (onClick)-->
+        <table id="product-8-info" class="info text-lg flex-col place-items-center pt-8 hidden">
+          <tr>
+            <th class="p-3"> Size </th>
+            <th class="p-3"> Color </th>
+            <th class="p-3"> Contrast </th>
+          </tr>
+          <tr>
+          <td class="text-center"> 27" </td>
+          <td class="text-center"> Blue </td>
+          <td class="text-center"> High </td>
+        </tr>
+        </table>
+        </div>
+        <!-- Product Card #9 -->
+        <div onclick="showInfo('product-9-info')"
+          class="bg-background border-2 border-outline rounded-lg shadow-md p-6 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="relative">
+            <img
+              src="../assets/item-9.webp"
+              alt="Gaming Laptop"
+              width="400"
+              height="300"
+              class="w-full h-48 object-contain mb-4" 
+              loading="lazy"/>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-lg font-semibold text-text">Gaming Laptop</h3>
+            <p class="text-outline text-sm"
+              >High performance, RGB keyboard, sleek design</p
+            >
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-text font-bold text-xl">$1499.99</p>
+              </div>
+              <button
+                class="bg-background-dark text-link px-4 py-2 rounded-lg hover:bg-link hover:text-white transition-all duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-link active:scale-95">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Additional Info (onClick)-->
+        <table id="product-9-info" class="info text-lg text-text flex-col place-items-center pt-12 hidden">
+          <tr>
+            <th class="p-3"> Size </th>
+            <th class="p-3"> Color </th>
+            <th class="p-3"> Contrast </th>
+          </tr>
+          <tr>
+          <td class="text-center"> 27" </td>
+          <td class="text-center"> Blue </td>
+          <td class="text-center"> High </td>
+        </tr>
+        </table>
+        </div>
+      </div>
+    </main>
+    <!-- Hides/unhides additional product info -->
+    <script>
+      function showInfo(productId) {
+        const infoTable = document.getElementById(productId);
+        if (infoTable) {
+          if (infoTable.classList.contains('hidden')) {
+            infoTable.classList.remove('hidden');
+            infoTable.classList.add('flex');
+          } else {
+            infoTable.classList.remove('flex');
+            infoTable.classList.add('hidden');
+          }
+        }
+      }
+    </script>
+    <!-- Footer -->
+    <footer
+      class="bg-background px-3 py-4 shadow-[0_-1px_2px_0_rgba(0,0,0,0.05)]"
+      role="contentinfo">
+      <div class="flex justify-between items-center">
+        <a href="contact.html" class="flex items-center">
+          <img src="../assets/email.webp" alt="Email Icon" class="w-5 h-5 mr-2 object-contain" />
+          <span class="text-text group-hover:underline text-sm">Feedback</span>
+        </a>
+        <p class="text-logo font-bold text-sm">eStop</p>
+        <div class="flex items-center">
+          <img
+            src="../assets/copyright.webp"
+            alt="Copyright Icon"
+            class="w-5 h-5 mr-2 object-contain" />
+          <p class="text-text text-sm">Copyright</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

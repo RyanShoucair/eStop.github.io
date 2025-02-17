@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="background-background">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="eStop - Your premier destination for the latest display innovations" />
+    <meta
+      name="keywords"
+      content="monitors, computer accessories, gaming monitors, office displays" />
+    <meta name="author" content="eStop" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/x-icon" href="assets/cart.webp" />
+    <title>eStop - Premium Monitors & Computer Accessories</title>
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      as="font"
+      onload="this.onload=null;this.rel='stylesheet'" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+      media="print"
+      onload="this.media='all'" />
+      <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap">
+      </noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      media="print"
+      onload="this.media='all'" />
+    <script src="js/newsletter.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              logo: "#156F85",
+              link: "#C1372F",
+              outline: "#2C3B47",
+              text: "#1F2224",
+              background: "#F5F5F6",
+              "background-dark": "#D8D9DA",
+            },
+            fontFamily: {
+              sans: ["Open Sans", "sans-serif"],
+              serif: ["Inter", "serif"],
+            },
+            screens: {
+              xs: "375px",
+              sm: "392px",
+              md: "1024px",
+              lg: "1728px",
+            },
+            borderRadius: {
+              xl: "10px",
+            },
+            fontSize: {
+              xs: "18px",
+              sm: "22px",
+              lg: "28px",
+              xl: "32px",
+              "2xl": "38px",
+              "3xl": "42px",
+              "4xl": "48px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="flex flex-col min-h-screen overflow-x-hidden">
+    <!-- Header -->
+    <header class="bg-background shadow-sm" role="banner">
+      <div class="px-2 xs:px-3 lg:px-6 py-2 lg:py-4">
+        <div class="block lg:flex items-center justify-between">
+          <h1
+            class="text-logo font-serif text-3xl xs:text-4xl hover:opacity-90 transition-opacity duration-200">
+            <a href="index.html">eStop</a>
+          </h1>
+          <!-- Search Bar -->
+          <div class="relative mt-2 lg:mt-0 lg:ml-8 lg:flex-grow lg:max-w-xl">
+            <input
+              type="text"
+              placeholder="Search products..."
+              aria-label="Search products"
+              class="w-full px-3 xs:px-4 py-3 xs:py-4 rounded-lg border-2 border-outline focus:outline-none focus:border-link min-h-[44px]" />
+            <button
+              class="absolute right-3 top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity p-3 min-w-[44px] min-h-[44px]"
+              aria-label="Search">
+              <img
+                src="assets/search.webp"
+                alt="Search icon"
+                width="241"
+                height="200"
+                class="w-auto h-5 object-contain" />
+            </button>
+          </div>
+          <!-- Navigation -->
+          <nav
+            class="flex justify-between items-center text-link text-xs xs:text-sm font-medium mt-3 lg:justify-end lg:flex-grow lg:space-x-36 lg:mt-0">
+            <a
+              href="index.html"
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300">
+              HOME
+            </a>
+            <a
+              href="/html/products.html"
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300">
+              PRODUCTS
+            </a>
+            <a
+              href="/html/contact.html"
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300">
+              CONTACT
+            </a>
+            <a href="#" class="relative" aria-label="Shopping Cart">
+              <img
+                src="assets/cart.webp"
+                alt="Cart icon"
+                width="24"
+                height="24"
+                class="w-6 h-6 object-contain" />
+              <span
+                class="absolute -top-2 -right-2 bg-link text-white text-xs rounded-full w-4 h-4 flex items-center justify-center"
+                >0</span
+              >
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow" role="main">
+      <!-- Banner Section -->
+      <section 
+      aria-label="Hero Banner" 
+      class="relative bg-background-dark overflow-hidden">
+      <picture>
+        <!-- Large screens -->
+        <source
+          media="(min-width: 1728px)"
+          srcset="/assets/banner-lg.webp"
+          width="1728"
+          height="215" />
+        <!-- Medium screens -->
+        <source
+          media="(min-width: 1024px)"
+          srcset="/assets/banner-md.webp"
+          width="1024"
+          height="215" />
+        <!-- Small screens (default) -->
+        <img
+          src="/assets/banner-sm.webp"
+          alt="eStop Banner"
+          width="393"
+          height="215"
+          class="w-full object-cover min-h-[160px] md:min-h-[215px]"
+          fetchpriority="high"
+          decoding="sync" />
+      </picture>
+    </section>
+      <!-- Quick Categories -->
+      <section
+        class="grid grid-cols-2 lg:grid-cols-4 gap-2 xs:gap-4 p-2 xs:p-4 bg-background"
+        aria-label="Product Categories">
+        <!-- Category #1 -->
+        <a
+          href="/html/products.html"
+          class="flex flex-col items-center justify-center p-4 xs:p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:bg-background-dark group focus:ring-2 focus:ring-link focus:outline-none"
+          role="button"
+          tabindex="0">
+          <span class="text-text font-medium">Monitors</span>
+        </a>
+        <a
+          href="/html/products.html"
+          class="flex flex-col items-center justify-center p-4 xs:p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:bg-background-dark group focus:ring-2 focus:ring-link focus:outline-none"
+          role="button"
+          tabindex="0">
+          <span class="text-text font-medium">Accessories</span>
+        </a>
+        <a
+          href="/html/products.html"
+          class="flex flex-col items-center justify-center p-4 xs:p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:bg-background-dark group focus:ring-2 focus:ring-link focus:outline-none"
+          role="button"
+          tabindex="0">
+          <span class="text-text font-medium">Gaming</span>
+        </a>
+        <!-- Category #3 -->
+        <a
+          href="/html/products.html"
+          class="flex flex-col items-center justify-center p-4 xs:p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:bg-background-dark group focus:ring-2 focus:ring-link focus:outline-none"
+          role="button"
+          tabindex="0">
+          <span class="text-text font-medium">Office</span>
+        </a>
+      </section>
+      <!-- Why eStop Section-->
+      <div
+        class="grid grid-cols-2 md:grid-cols-[1fr_2fr_1fr] lg:grid-cols-[15%_70%_15%] p-4 xs:p-8">
+        <h2 class="text-lg font-thin col-span-2 md:hidden">
+          Why <span class="text-logo font-semibold">eStop</span>?
+        </h2>
+        <div>
+          <p class="md:hidden text-text text-sm font-thin whitespace-pre-line">
+            Our competitors 
+            expect you to 
+            trust them.
+            <span class="text-logo font-bold">eStop</span> gains 
+            your trust
+            through an 
+            unparalleled 
+            shopping 
+            experience.
+          </p>
+          <!-- Desktop Why eStop Section -->
+          <p
+            class="hidden md:block max-w-64 mt-16 p-4 text-text text-sm font-thin whitespace-pre-line bg-background rounded-lg"> Why <span class="text-logo font-semibold">eStop</span>? 
+
+            Our competitors 
+            expect you to trust 
+            them. <span class="text-logo font-semibold">eStop</span> gains 
+            your trust through 
+            an unparalleled 
+            shopping 
+            experience.
+          </p>
+          <!-- Desktop Shipping Tile -->
+          <p
+            class="hidden md:block max-w-64 p-4 mt-2 text-text text-sm font-bold whitespace-pre-line bg-background rounded-lg text-center"> FREE SHIPPING 
+            ON ORDERS $100+
+          </p>
+        </div>
+        <!-- Catalog Button -->
+        <div class="md:hidden h-full flex justify-end items-end">
+          <a
+            href="/html/products.html"
+            class="h-72 max-w-36 bg-background border-2 border-outline rounded-xl text-sm text-link text-center font-bold flex items-center justify-center p-4 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] transition-all duration-300 hover:scale-102 hover:bg-background-dark hover:text-[#A12920]">
+            BROWSE OUR CATALOG
+          </a>
+        </div>
+        <!-- Desktop Recently Added Section -->
+        <section
+          class="hidden md:flex flex-col items-center lg:place-items-stretch justify-center ml-24">
+          <h3 class="text-lg mb-6 text-center">Recently Added</h3>
+          <div class="flex items-center justify-between">
+            <!-- Product #1 -->
+            <a
+              href="/html/products.html"
+              class="w-72 bg-background border-2 border-outline rounded-xl flex flex-col items-center justify-between shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] transition-all duration-300 hover:scale-102 hover:bg-background-dark">
+              <img
+                src="/assets/added-1.webp"
+                alt="Product Image"
+                class="object-scale-down h-64 w-64 transform transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+              <div class="w-full p-4">
+                <p class="text-lg font-bold text-text mb-2">$299.99</p>
+                <div class="flex justify-evenly w-full pb-2 text-text">
+                  <div class="flex flex-col items-center">
+                    <span class="text-[10px]"> SIZE </span>
+                    <span class="text-xs font-semibold">24"</span>
+                  </div>
+                  <div class="h-10 w-[1px] bg-outline"></div>
+                  <div class="flex flex-col items-center">
+                    <span class="text-[10px]"> COLORS </span>
+                    <span class="text-xs font-semibold">3</span>
+                  </div>
+                  <div class="h-10 w-[1px] bg-outline"></div>
+                  <div class="flex flex-col items-center">
+                    <span class="text-[10px]"> CONTRAST </span>
+                    <span class="text-xs font-semibold">High</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Product #2 -->
+            <a
+              href="/html/products.html"
+              class="md:hidden lg:flex w-72 bg-background border-2 border-outline rounded-xl flex flex-col items-center justify-between shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] transition-all duration-300 hover:scale-102 hover:bg-background-dark">
+              <img
+                src="/assets/added-2.webp"
+                alt="Product Image"
+                class="object-scale-down h-64 w-64 transform transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+              <div class="w-full p-4">
+                <p class="text-lg font-bold text-text mb-2">$399.99</p>
+                <div class="flex justify-evenly w-full pb-2 text-text">
+                  <div class="flex flex-col items-center">
+                    <span class="text-[10px]"> SIZE </span>
+                    <span class="text-xs font-semibold">27"</span>
+                  </div>
+                  <div class="h-10 w-[1px] bg-outline"></div>
+                  <div class="flex flex-col items-center">
+                    <span class="text-[10px]"> COLORS </span>
+                    <span class="text-xs font-semibold">3</span>
+                  </div>
+                  <div class="h-10 w-[1px] bg-outline"></div>
+                  <div class="flex flex-col items-center">
+                    <span class="text-[10px]"> CONTRAST </span>
+                    <span class="text-xs font-semibold">High</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Product #3 -->
+            <a
+              href="/html/products.html"
+              class="md:hidden lg:flex w-72 bg-background border-2 border-outline rounded-xl flex flex-col items-center justify-between shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] transition-all duration-300 hover:scale-102 hover:bg-background-dark">
+              <img
+                src="/assets/added-3.webp"
+                alt="Product Image"
+                class="object-scale-down h-64 w-64 transform transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+              <div class="w-full p-4">
+                <p class="text-lg font-bold text-text mb-2">$499.99</p>
+                <div class="flex justify-evenly w-full pb-2 text-text">
+                  <div class="flex flex-col items-center">
+                    <span class="text-[10px]"> SIZE </span>
+                    <span class="text-xs font-semibold">36"</span>
+                  </div>
+                  <div class="h-10 w-[1px] bg-outline"></div>
+                  <div class="flex flex-col items-center">
+                    <span class="text-[10px]"> COLOR </span>
+                    <span class="text-xs font-semibold">3</span>
+                  </div>
+                  <div class="h-10 w-[1px] bg-outline"></div>
+                  <div class="flex flex-col items-center">
+                    <span class="text-[10px]"> CONTRAST </span>
+                    <span class="text-xs font-semibold">High</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- Desktop Catalog Button -->
+        <div class="hidden md:flex justify-end items-center">
+          <a
+            href="/html/products.html"
+            class="h-96 w-36 bg-background border-2 border-outline rounded-xl text-sm text-link text-center font-bold flex items-center justify-center whitespace-pre-line p-4 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] transition-all duration-300 hover:scale-102 hover:bg-background-dark">
+            BROWSE 
+            OUR 
+            CATALOG
+          </a>
+        </div>
+      </div>
+      <!-- Discount Tile -->
+      <div class="md:hidden">
+        <div class="px-3">
+          <p
+            class="bg-background text-text font-bold text-center p-2 rounded-xl">
+            FREE SHIPPING 
+            ON ORDERS $100+
+          </p>
+        </div>
+        <!-- Recently Added Section -->
+        <section class="md:hidden flex flex-col items-center px-2 xs:px-4">
+          <h3 class="text-lg font-bold my-3">Recently Added</h3>
+          <!-- Product #1 -->
+          <a
+            href="/html/products.html"
+            class="max-w-sm xs:max-w-sm mx-auto bg-background border-2 border-outline rounded-xl mb-4 p-3 xs:p-4 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] transition-all duration-300 hover:scale-102 hover:bg-background-dark">
+            <img
+              src="/assets/added-1.webp"
+              alt="Product Image"
+              class="object-scale-down h-64 w-64 transform transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <p class="text-lg font-bold text-text mb-2">$299.99</p>
+          </a>
+          <!-- Product #2 -->
+          <a
+            href="/html/products.html"
+            class="max-w-sm xs:max-w-sm mx-auto bg-background border-2 border-outline rounded-xl mb-4 p-3 xs:p-4 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] transition-all duration-300 hover:scale-102 hover:bg-background-dark">
+            <img
+              src="/assets/added-2.webp"
+              alt="Product Image"
+              class="object-scale-down h-64 w-64 transform transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <p class="text-lg font-bold text-text mb-2">$399.99</p>
+          </a>
+          <!-- Product #3 -->
+          <a
+            href="/html/products.html"
+            class="max-w-sm mx-auto bg-background border-2 border-outline rounded-xl mb-4 p-4 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] transition-all duration-300 hover:scale-102 hover:bg-background-dark">
+            <img
+              src="/assets/added-3.webp"
+              alt="Product Image"
+              class="object-scale-down h-64 w-64 transform transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <p class="text-lg font-bold text-text mb-2">$499.99</p>
+          </a>
+        </section>
+      </div>
+      </section>
+      <!-- Newsletter Section -->
+      <section
+        class="bg-background px-8 py-12 mt-8"
+        aria-label="Newsletter Subscription">
+        <div class="text-center">
+          <h2 class="text-lg lg:text-xl font-bold mb-4"
+            >Subscribe to Our Newsletter</h2
+          >
+          <p class="text-text text-lg mb-8"
+            >Stay updated with our latest products and exclusive offers!</p
+          >
+          <form
+            class="flex flex-col sm:flex-row gap-4 justify-center max-w-3xl mx-auto"
+            id="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="flex-grow px-6 py-3 rounded-lg border-2 focus:outline-none focus:border-link"
+              required />
+            <button
+              type="submit"
+              class="bg-background-dark px-8 py-3 rounded-lg hover:bg-link hover:text-white transition-colors duration-300">
+              Subscribe
+            </button>
+          </form>
+          <p class="hidden text-logo mt-4" id="success-message"
+            >Thanks for subscribing!</p
+          >
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-background px-3 py-4 shadow-[0_-1px_2px_0_rgba(0,0,0,0.05)]" role="contentinfo">
+      <div class="flex justify-between items-center">
+        <a href="/html/contact.html" class="flex items-center">
+          <img
+            src="/assets/email.webp"
+            alt="Email Icon"
+            width="20"
+            height="20"
+            class="w-5 h-5 mr-2 object-contain" />
+          <span class="text-text group-hover:underline text-sm">Feedback</span>
+        </a>
+        <p class="text-logo font-bold text-sm">eStop</p>
+        <div class="flex items-center">
+          <img
+            src="/assets/copyright.webp"
+            alt="Copyright Icon"
+            width="20"
+            height="20"
+            class="w-5 h-5 mr-2 object-contain" />
+          <p class="text-text text-sm">Copyright</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
