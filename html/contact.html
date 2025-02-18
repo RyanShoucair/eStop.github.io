@@ -34,7 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       media="print"
       onload="this.media='all'" />
-    <script src="../js/contact.js" defer></script>
+    <script src="../js/newsletter.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -75,33 +75,66 @@
       };
     </script>
   </head>
-  <body class="min-h-screen flex flex-col">
+  <body class="flex flex-col min-h-screen overflow-x-hidden">
     <!-- Header -->
-    <header class="bg-background shadow-sm" role="header">
-      <div class="px-3 lg:px-6 py-2 lg:py-4">
+    <header class="bg-background shadow-sm" role="banner">
+      <div class="px-2 xs:px-3 lg:px-6 py-2 lg:py-4">
         <div class="block lg:flex items-center justify-between">
-          <h1 class="text-logo font-serif text-4xl hover:opacity-90 transition-opacity duration-200">
+          <h1
+            class="text-logo font-serif text-3xl xs:text-4xl hover:opacity-90 transition-opacity duration-200">
             <a href="../index.html">eStop</a>
           </h1>
-          <div class="flex flex-col lg:flex-row lg:items-center lg:flex-grow">
-            <!-- Search Bar -->
-            <div class="relative mt-2 lg:mt-0 lg:ml-8 lg:flex-grow lg:max-w-xl">
-              <input type="text" placeholder="Search products..." aria-label="Search products"
-                class="w-full px-4 py-2 rounded-lg border-2 border-outline focus:outline-none focus:border-link">
-              <button class="absolute right-3 top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity" aria-label="Search">
-                <img src="../assets/search.webp" alt="Search icon" class="w-5 h-5">
-              </button>
-            </div>
-            <!-- Navigation -->
-            <nav class="flex justify-between items-center text-link text-sm font-medium mt-3 lg:justify-end lg:flex-grow lg:space-x-36 lg:mt-0">
-              <a href="../index.html" class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300"> HOME </a>
-              <a href="products.html" class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300"> PRODUCTS </a>
-              <a href="contact.html" class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300"> CONTACT </a>
-              <a href="#" class="relative" aria-label="Shopping Cart">
-                <img src="../assets/cart.webp" alt="Cart icon" class="w-6 h-6">
-                <span class="absolute -top-2 -right-2 bg-link text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
-              </a>
-            </nav>
+          <!-- Search Bar -->
+          <div class="relative mt-2 lg:mt-0 lg:ml-8 lg:flex-grow lg:max-w-xl">
+            <input
+              type="text"
+              placeholder="Search products..."
+              aria-label="Search products"
+              class="w-full px-3 xs:px-4 py-3 xs:py-4 rounded-lg border-2 border-outline focus:outline-none focus:border-link min-h-[44px]" />
+            <button
+              class="absolute right-3 top-1/2 -translate-y-1/2 hover:opacity-80 transition-opacity p-3 min-w-[44px] min-h-[44px]"
+              aria-label="Search">
+              <img
+                src="../assets/search.webp"
+                alt="Search icon"
+                width="241"
+                height="200"
+                class="w-auto h-5 object-contain" />
+            </button>
+          </div>
+          <!-- Navigation -->
+          <nav
+            class="flex justify-between items-center text-link text-xs xs:text-sm font-medium mt-3 lg:justify-end lg:flex-grow lg:space-x-36 lg:mt-0">
+            <a
+              href="../index.html"
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300">
+              HOME
+            </a>
+            <a
+              href="products.html"
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300">
+              PRODUCTS
+            </a>
+            <a
+              href="contact.html"
+              class="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-link after:transition-all after:duration-300">
+              CONTACT
+            </a>
+            <a href="#" class="relative" aria-label="Shopping Cart">
+              <img
+                src="../assets/cart.webp"
+                alt="Cart icon"
+                width="24"
+                height="24"
+                class="w-6 h-6 object-contain" />
+              <span
+                class="absolute -top-2 -right-2 bg-link text-white text-xs rounded-full w-4 h-4 flex items-center justify-center"
+                >0</span
+              >
+            </a>
+          </nav>
+        </div>
+      </div>
     </header>
     <!-- Contact Section -->
       <div class="px-4 py-8">
